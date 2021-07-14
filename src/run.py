@@ -23,7 +23,7 @@ part-0: 调整超参数
 my_lr = 1e-2
 my_test_size = 0.1
 my_validation_split = 0.1
-my_epochs = 40
+my_epochs = 3 #40
 my_batch_size = 128
 my_dropout = 0.2
 
@@ -69,7 +69,7 @@ part-B: 数据预处理-分词
 '''
 print('\npart-B: 数据预处理-分词')
 
-# 使用gensim加载已经训练好的汉语词向量
+# 使用gensim加载已经训练好的汉语词向量#sgns.zhihu.bigram.bz2
 cn_model = KeyedVectors.load_word2vec_format('res\\word-vector\\sgns.zhihu.bigram.bz2', binary=False)
 
 # 用jieba进行中文分词，最后将每条评论转换为了词索引的列表
