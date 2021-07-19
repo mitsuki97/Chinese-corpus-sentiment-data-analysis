@@ -1,3 +1,5 @@
 *.bz2
 *.hdf5
 *.png
+.vscode/settings.json
+.vscode/settings.json
